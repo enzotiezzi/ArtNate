@@ -82,7 +82,8 @@
                         android:inputType="number"
                         android:ems="10"
                         android:id="@+id/editText"
-                        android:layout_gravity="center_horizontal" />
+                        android:layout_gravity="center_horizontal"
+                        android:hint="Número da Agência" />
 
                 </LinearLayout>
 
@@ -97,14 +98,16 @@
                         android:layout_height="wrap_content"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:text="Conta Corrente"
-                        android:id="@+id/textView4" />
+                        android:id="@+id/textView4"
+                        android:textStyle="bold" />
 
                     <EditText
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:inputType="number"
                         android:ems="10"
-                        android:id="@+id/editText2" />
+                        android:id="@+id/editText2"
+                        android:hint="Número da Conta" />
                 </LinearLayout>
 
             </LinearLayout>

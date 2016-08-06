@@ -13,4 +13,11 @@
         <item>Santander</item>
         <item>Bradesco</item>
     </string-array>
+
+    <string-array name="arte_arrays">
+        <item>Música</item>
+        <item>Acrobacia</item>
+        <item>Teatro</item>
+        <item>Dança Contemporânea</item>
+    </string-array>
 </resources>

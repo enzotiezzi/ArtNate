@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="75dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/logo_256"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Quase terminando! Fale sobre sua arte!"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Nome artístico"
+                android:id="@+id/textView2"
+                android:layout_marginTop="22dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/nomeArtistico"
+                android:hint="Digite seu nome artístico" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Qual a minha arte?"
+                android:id="@+id/textView4"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/arte"
+                android:spinnerMode="dropdown"
+                android:entries="@array/arte_arrays"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="O que eu faço?"
+                android:id="@+id/textView3"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:ems="10"
+                android:id="@+id/oqueFaco"
+                android:hint="Digite em tags o que define a sua arte"
+                android:clickable="false" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar"
+                android:id="@+id/button"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.06"
+                android:background="#235cae"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
