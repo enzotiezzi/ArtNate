@@ -11,7 +11,8 @@
         android:textStyle="bold"
         android:layout_alignParentTop="true"
         android:layout_alignLeft="@+id/textView8"
-        android:layout_alignStart="@+id/textView8" />
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="46dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,8 +44,8 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="3 -Rua Augusta | 05/08/2016"
         android:id="@+id/textView10"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/textView9"
         android:layout_alignLeft="@+id/textView9"
-        android:layout_alignStart="@+id/textView9"
-        android:layout_marginTop="45dp" />
+        android:layout_alignStart="@+id/textView9" />
 </RelativeLayout>

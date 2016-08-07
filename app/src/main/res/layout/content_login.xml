@@ -7,5 +7,39 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
-        android:background="@mipmap/bg"></LinearLayout>
+        android:background="@mipmap/bg">
+
+        <ImageButton
+            android:layout_width="278dp"
+            android:layout_height="278dp"
+            android:id="@+id/imageButton"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/logo_512" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:text="faça login com facebook"
+                android:id="@+id/button6"
+                android:layout_gravity="center_vertical"
+                android:textColor="#fff"
+                android:background="#3B579D"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+
+    </LinearLayout>
 </RelativeLayout>
