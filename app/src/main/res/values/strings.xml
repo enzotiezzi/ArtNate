@@ -20,9 +20,6 @@
         <item>Teatro</item>
         <item>Dança Contemporânea</item>
     </string-array>
-<<<<<<< HEAD
     <string name="title_activity_relatorio_localizacao">RelatorioLocalizacaoActivity</string>
-=======
     <string name="title_activity_home">HomeActivity</string>
->>>>>>> 27951a0a2fb07978c7df44334a806e48f63fad84
 </resources>
