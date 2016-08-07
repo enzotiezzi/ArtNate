@@ -35,7 +35,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/imageView"
+                    android:id="@+id/imageViewBarcode"
                     android:src="@mipmap/johnny"
                     android:layout_marginTop="30dp" />
 
@@ -70,7 +70,7 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="retirar fundos"
+                    android:text="ver fundos"
                     android:id="@+id/button2"
                     android:layout_marginBottom="44dp"
                     android:layout_alignParentBottom="true"

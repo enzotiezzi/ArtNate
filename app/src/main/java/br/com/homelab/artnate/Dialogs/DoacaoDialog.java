@@ -103,11 +103,11 @@ public class DoacaoDialog extends Dialog
                                     .setMessage("Doação feita com sucesso")
                                     .setNeutralButton("ok", null)
                                     .show();
+
+                            dismiss();
                         }
                     }
                 }, efetuarDoacaoInput);
-
-                dismiss();
             }
         });
     }
@@ -127,9 +127,9 @@ public class DoacaoDialog extends Dialog
         @Override
         public void onCheckedChanged(RadioGroup group, int checkedId) {
             if (checkedId != -1) {
-                radioGroup2.setOnCheckedChangeListener(null); // remove the listener before clearing so we don't throw that stackoverflow exception(like Vladimir Volodin pointed out)
-                radioGroup2.clearCheck(); // clear the second RadioGroup!
-                radioGroup2.setOnCheckedChangeListener(listener2); //reset the listener
+                radioGroup2.setOnCheckedChangeListener(null);
+                radioGroup2.clearCheck();
+                radioGroup2.setOnCheckedChangeListener(listener2);
             }
         }
     };

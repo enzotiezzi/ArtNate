@@ -89,26 +89,30 @@ public class HomeActivity extends AppCompatActivity
 
         if (scanningResult != null)
         {
-            String scanContent = scanningResult.getContents();
+            String scanContent = scanningResult.getContents().substring(4);
             String scanFormat = scanningResult.getFormatName();
 
             // TODO: pegar artista com o codigo de barras
 
-            String url = Utils.buildURL(getApplicationContext(), "geral/aovivo");
+            String url = Utils.buildURL(getApplicationContext(), "geral/artistaPorCodigo");
 
-            HttpClientHelper.sendRequest(context, "get", url, new ICallback()
+            HttpClientHelper.sendRequest(context, "post", url, new ICallback()
             {
                 @Override
                 public void onRequestEnd(int statusCode, Throwable t, String response)
                 {
                     if (statusCode == 200 && t == null)
                     {
-                        Artista[] artistas = new Gson().fromJson(response, Artista[].class);
+                        Artista a = new Gson().fromJson(response, Artista.class);
 
-                        listViewAoVivo.setAdapter(new ArrayAdapter<Artista>(context, android.R.layout.simple_spinner_dropdown_item, artistas));
+                        Intent i = new Intent(context, PerfilActivity.class);
+
+                        i.putExtra("artista", new Gson().toJson(a));
+
+                        startActivity(i);
                     }
                 }
-            }, null);
+            }, scanContent);
         }
     }
 

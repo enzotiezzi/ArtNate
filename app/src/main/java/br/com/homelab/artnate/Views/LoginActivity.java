@@ -65,7 +65,11 @@ public class LoginActivity extends AppCompatActivity
                     startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                 }
                 else
+                {
                     new SessionManager(getApplicationContext()).setPreferences("idArtista", "1");
+                    startActivity(new Intent(LoginActivity.this, RelatorioLocalizacaoActivity.class));
+                }
+
             }
         });
     }
