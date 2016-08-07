@@ -21,13 +21,15 @@
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:background="@color/lightblue">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/imageViewFoto"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center"
+                    android:src="@mipmap/foto"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -36,6 +38,7 @@
                     android:text="Nome"
                     android:id="@+id/textViewNome"
                     android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
                     android:layout_marginBottom="12dp"/>
 
                 <TextView
@@ -43,18 +46,9 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Música - "
+                    android:textColor="#FFFFFF"
                     android:id="@+id/textViewTipoMusica"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="12dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Estado"
-                    android:layout_gravity="center"
-                    android:textColor="@color/lightblue"
-                    android:id="@+id/textViewEstado"
                     android:layout_marginBottom="12dp"/>
 
             </LinearLayout>
@@ -68,11 +62,21 @@
                 android:paddingTop="@dimen/activity_vertical_margin"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Estado"
+                    android:layout_gravity="center"
+                    android:textColor="@color/lightblue"
+                    android:id="@+id/textViewEstado"
+                    android:layout_marginBottom="12dp"/>
+
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Fazer Doação"
-                    android:id="@+id/button3"
+                    android:id="@+id/buttonFazerDoacao"
                     android:layout_gravity="center_horizontal"
                     android:background="@color/lightblue"
                     android:textColor="#FFFFFF"

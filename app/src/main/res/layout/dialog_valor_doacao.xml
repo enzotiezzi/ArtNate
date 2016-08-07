@@ -22,16 +22,19 @@
         android:layout_gravity="center"
         android:layout_marginBottom="24dp"/>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginBottom="8dp">
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-        <LinearLayout
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2">
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/radiogroup1"
+            android:layout_weight="1">
 
             <RadioButton
                 android:layout_width="wrap_content"
@@ -43,18 +46,6 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="R$ 5,00"
-                android:id="@+id/radioButton5reais"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:weightSum="2">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="R$ 10,00"
                 android:id="@+id/radioButton10reais"
                 android:layout_weight="1"/>
@@ -62,20 +53,31 @@
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="R$ 20,00"
-                android:id="@+id/radioButton20reais"/>
-        </LinearLayout>
+                android:text="R$ 50,00"
+                android:id="@+id/radioButton50reais"
+                android:layout_weight="1"/>
+            </RadioGroup>
 
-        <LinearLayout
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2">
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/radiogroup2"
+            android:layout_weight="1">
 
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="R$ 50,00"
-                android:id="@+id/radioButton50reais"
+                android:text="R$ 5,00"
+                android:id="@+id/radioButton5reais"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 20,00"
+                android:id="@+id/radioButton20reais"
                 android:layout_weight="1"/>
 
             <RadioButton
@@ -83,9 +85,10 @@
                 android:layout_height="wrap_content"
                 android:text="R$ 100,00"
                 android:id="@+id/radioButton100reais"/>
-        </LinearLayout>
 
-    </RadioGroup>
+        </RadioGroup>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

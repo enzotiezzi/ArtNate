@@ -21,8 +21,6 @@ public class ReaderTest extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reader_test);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         buttonScanQR = (Button) findViewById(R.id.buttonScanQR);
 
@@ -31,9 +29,7 @@ public class ReaderTest extends AppCompatActivity
             @Override
             public void onClick(View v)
             {
-                IntentIntegrator scanIntegrator = new IntentIntegrator(ReaderTest.this);
 
-                scanIntegrator.initiateScan();
             }
         });
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="SERVER_URL">http://h-zellar.azurewebsites.net/</string>
+    <string name="SERVER_URL">http://programah.azurewebsites.net</string>
 
     <string name="app_name">ArtNate</string>
     <string name="wait">Aguarde</string>
